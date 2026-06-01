@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* Definition of node */
+struct node {
+    int data;
+    struct node *prev;
+    struct node *next;
+};
+
+struct node *head = NULL;
+
+/* Function Prototypes */
+void create();
+void insert();
+void deletee();
+void traverse();
+
+/* Main Function */
+int main() {
+    int choice;
+
+    while (1) {
+        printf("\n--- Doubly Linked List Menu ---\n");
+        printf("1. Create\n");
+        printf("2. Insert\n");
+        printf("3. Deletee\n");
+        printf("4. Traverse\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1: create();
+                    break;
+            case 2: insert
